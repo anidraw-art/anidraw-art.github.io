@@ -1,0 +1,111 @@
+.swiper-wrapper {
+  width: revert;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 225px;
+  height: 75svh;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper-slide-active {
+  >:first-child {
+    transition: transform 0.2s ease-in-out;
+    filter: revert;
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.sliderContoller {
+  // margin-top: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-top: auto;
+  margin: auto 0 20px
+}
+
+.sliderContoller .sliderButton {
+  position: static;
+  // background: rgba(255, 255, 255, 0.6);
+  // background: radial-gradient(ellipse farthest-corner at right bottom, #e6c233 0%, #e6b82c 8%, #8f6f25 30%, #7a622b 40%, transparent 80%),
+  //           radial-gradient(ellipse farthest-corner at left top, #baa45a 0%, #e6e6a4 8%, #baa45a 25%, #53491c 62.5%, #53491c 100%);
+  background: #e6b82c;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  margin: revert;
+  top: revert;
+  right: revert;
+  left: revert;
+  box-sizing: border-box;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiperPagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+
+
+  position: static;
+  top: 0 !important;
+  pointer-events: none;
+  width: revert !important;
+}
+
+.swiperPagination .swiper-pagination-bullet {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 0 4px;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.2));
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.swiperPagination .swiper-pagination-bullet-active {
+  background: #e6b82c;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    width: 250px;
+  }
+
+  .sliderContoller .sliderButton {
+    width: 50px;
+    height: 50px;
+  }
+
+  .swiper-slide-active {
+    >:first-child:hover {
+      transform: scale(1.03);
+    }
+  }
+}
