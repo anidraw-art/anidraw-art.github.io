@@ -31,7 +31,6 @@
 }
 
 .sliderContoller {
-  // margin-top: 40px;
   position: relative;
   display: flex;
   align-items: center;
@@ -44,9 +43,7 @@
 
 .sliderContoller .sliderButton {
   position: static;
-  // background: rgba(255, 255, 255, 0.6);
-  background: radial-gradient(ellipse farthest-corner at right bottom, #e6c233 0%, #e6b82c 8%, #8f6f25 30%, #7a622b 40%, transparent 80%),
-            radial-gradient(ellipse farthest-corner at left top, #baa45a 0%, #e6e6a4 8%, #baa45a 25%, #53491c 62.5%, #53491c 100%);
+  background: #e6b82c;
   padding: 2px;
   width: 40px;
   height: 40px;
@@ -92,7 +89,7 @@
   background: #e6b82c;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .swiper-slide {
     width: 250px;
   }
@@ -100,6 +97,8 @@
   .sliderContoller .sliderButton {
     width: 50px;
     height: 50px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #e6c233 0%, #e6b82c 8%, #8f6f25 30%, #7a622b 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #baa45a 0%, #e6e6a4 8%, #baa45a 25%, #53491c 62.5%, #53491c 100%);
   }
 
   .swiper-slide-active {
