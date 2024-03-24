@@ -1,0 +1,23 @@
+.container  {
+  width: 100%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+
+  h1 {
+    margin: 0;
+  }
+
+  .linksContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+  }
+}

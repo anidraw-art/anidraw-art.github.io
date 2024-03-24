@@ -1,0 +1,28 @@
+/* Mobile first */
+.appContainer {
+  width: 100%;
+  height: 100svh;
+  min-height: 100%;
+  color: white;
+
+  background: rgb(0,0,20);
+  background: -moz-linear-gradient(0deg, rgba(0,0,20,1) 0%, rgba(69,69,69,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,20,1) 0%, rgba(69,69,69,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,20,1) 0%, rgba(69,69,69,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000014",endColorstr="#454545",GradientType=1);
+}
+
+.pageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 768px) {
+  .appContainer {
+    width: 100%;
+  }
+}
