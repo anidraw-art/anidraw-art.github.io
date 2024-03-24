@@ -33,7 +33,10 @@ jobs:
 
       - name: 'Initialize and build'
         run: "npm install && DISABLE_ESLINT_PLUGIN=true npm run build"
-        
+
+      - name: '404 workaround for static router'
+        run: "cp ./build/index.html ./build/404.html"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
