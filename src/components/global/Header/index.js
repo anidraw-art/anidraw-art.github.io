@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 const Header = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.headerContainer}>
       <h1>Anidraw</h1>
       {/* <div className={styles.linksContainer}>
         <a href="https://instagram.com/oponn_">haha</a>
