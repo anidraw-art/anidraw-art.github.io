@@ -1,7 +1,7 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {EffectCoverflow, Pagination, Navigation} from 'swiper/modules';
 
-import {Card} from 'components/global';
+import {Card} from '../../global';
 import members from './assets/members';
 
 import 'swiper/css';
