@@ -1,6 +1,8 @@
 import {
   coconaw,
   coconawIcon,
+  diurnaldays,
+  diurnaldaysIcon,
   doyngu,
   doynguIcon,
   elodeas,
@@ -58,6 +60,13 @@ const members = [
     image: coconaw,
     icon: coconawIcon,
     name: 'Judy',
+  },
+  {
+    alias: 'Diurnal Days',
+    handle: 'DiurnalDays',
+    image: diurnaldays,
+    icon: diurnaldaysIcon,
+    name: 'Robins',
   },
   {
     alias: 'LITEMI',

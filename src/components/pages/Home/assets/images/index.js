@@ -1,4 +1,5 @@
 export {default as coconaw} from './cocoNa_w.jpg';
+export {default as diurnaldays} from './diurnaldays.jpg';
 export {default as doyngu} from './doyngu.jpg';
 export {default as elodeas} from './elodeas.jpg';
 export {default as hyavoc} from './hyavoc.jpg';
@@ -11,6 +12,7 @@ export {default as zbknashi} from './ZBK_Nashi.jpg';
 export {default as zeklewa} from './zeklewa.jpg';
 
 export {default as coconawIcon} from './cocoNa_w-icon.jpg';
+export {default as diurnaldaysIcon} from './diurnaldays-icon.jpg';
 export {default as doynguIcon} from './doyngu-icon.jpg';
 export {default as elodeasIcon} from './elodeas-icon.jpg';
 export {default as hyavocIcon} from './hyavoc-icon.jpg';
