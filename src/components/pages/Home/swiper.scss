@@ -16,10 +16,6 @@
     transition: transform 0.2s ease-in-out;
     filter: revert;
   }
-
-  >:first-child:hover {
-    transform: scale(1.03);
-  }
 }
 
 .swiper-slide img {
@@ -104,5 +100,11 @@
   .sliderContoller .sliderButton {
     width: 50px;
     height: 50px;
+  }
+
+  .swiper-slide-active {
+    >:first-child:hover {
+      transform: scale(1.03);
+    }
   }
 }
