@@ -1,15 +1,12 @@
 /* Mobile */
+body {
+  background-color: rgb(30, 30, 30);
+}
 .appContainer {
   width: 100%;
-  height: calc(100svh + 1px);
+  height: 100svh;
   min-height: 100%;
   color: white;
-
-  /* background: rgb(0,0,20);
-  background: -moz-linear-gradient(0deg, rgba(0,0,20,1) 0%, rgb(40, 40, 45) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(0,0,20,1) 0%, rgba(40, 40, 45,1) 100%);
-  background: linear-gradient(0deg, rgba(0,0,20,1) 0%, rgba(40, 40, 45,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000014",endColorstr="#454545",GradientType=1); */
   background-color: rgb(30, 30, 30);
   box-sizing: border-box;
   overflow: hidden;
