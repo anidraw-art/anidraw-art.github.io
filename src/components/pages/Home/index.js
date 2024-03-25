@@ -45,7 +45,8 @@ function App() {
 
           <div className="swiperButtonPrev sliderButton">
             <div className={styles.arrowContainer}>
-              <div className={styles.arrow}>◀</div>
+              {/* <div className={styles.arrow}>◀</div> */}
+              <div className={styles.arrowLeft} />
             </div>
           </div>
 
@@ -53,7 +54,8 @@ function App() {
 
           <div className="swiperButtonNext sliderButton">
             <div className={styles.arrowContainer}>
-              <div className={styles.arrow}>▶</div>
+              {/* <div className={styles.arrow}>▶</div> */}
+              <div className={styles.arrowRight} />
             </div>
           </div>
         </div>

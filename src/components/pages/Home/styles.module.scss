@@ -48,15 +48,34 @@
 }
 
 .arrowContainer:hover {
-  .arrow {
-    color: rgb(0, 0, 0, 0.8);
+  .arrowRight {
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+  }
+  .arrowLeft {
+    border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
   }
 }
 
-.arrow {
+.arrowRight, .arrowLeft {
   composes: unselectable from "~/src/css/properties/unselectable.module.scss";
-  color: rgb(0, 0, 0, 0.5);
   pointer-events: none;
+  width: 0;
+  height: 0;
+	border-style: solid;
+  position:absolute;
+  top: calc(50% - 5px);
+}
+
+.arrowRight {
+	border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+	border-width: 5px 0 5px 10px;
+  right: calc(50% - 6px);
+}
+
+.arrowLeft {
+	border-color: transparent rgba(0, 0, 0, 0.5) transparent transparent;
+	border-width: 5px 10px 5px 0;
+  left: calc(50% - 6px);
 }
 
 @media only screen and (min-width: 768px) {
@@ -64,8 +83,16 @@
   .homeContainer::after {
     width: 25%;
   }
+  .arrowRight, .arrowLeft {
+    top: calc(50% - 7px);
+  }
 
-  .arrow {
-    font-size: 1.5rem;
+  .arrowRight {
+    border-width: 7px 0 7px 14px;
+    right: calc(50% - 9px);
+  }
+  .arrowLeft {
+    border-width: 7px 14px 7px 0;
+    left: calc(50% - 9px);
   }
 }
