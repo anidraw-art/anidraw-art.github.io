@@ -19,8 +19,6 @@ import {
   ratchuuuIcon,
   rin,
   rinIcon,
-  ruiton,
-  ruitonIcon,
   scup,
   scupIcon,
   zeklewa,
@@ -106,13 +104,6 @@ const members = [
     image: rin,
     icon: rinIcon,
     name: 'Rin',
-  },
-  {
-    alias: 'Ruiton',
-    handle: 'luckyeric320',
-    image: ruiton,
-    icon: ruitonIcon,
-    name: 'Eric',
   },
   {
     alias: 'Rachel',
